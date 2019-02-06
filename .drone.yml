@@ -1,0 +1,27 @@
+pipeline:
+  publish:
+    image: plugins/docker
+    secrets: [ docker_username, docker_password ]
+    repo: josmo/lancement-web
+    auto_tag: true
+    file: Dockerfile
+    when:
+      event: [ push, tag ]
+
+  deploy-dev:
+    image: peloton/drone-helm:0.0.3
+    chart: ./helm/lancement
+    update_dependencies: true
+    values:
+    - annotations.deployedDate="${DRONE_BUILD_CREATED}"
+    - annotations.buildNumber="${DRONE_BUILD_NUMBER}"
+    release: lancement
+    namespace: josmo
+    wait: true
+    timeout: 200
+    secrets: [ api_server, kubernetes_token ]
+    when:
+      event: [ push ]
+      branch: master
+
+branches: [ master ]
