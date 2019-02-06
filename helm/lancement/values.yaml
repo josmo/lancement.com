@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: josmo/lancement-web
-  tag: stable
+  tag: latest
   pullPolicy: Always
 
 nameOverride: ""
