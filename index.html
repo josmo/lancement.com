@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lancement | DevOps & Platform Engineering Consulting</title>
-  <meta name="description" content="Lancement delivers cloud infrastructure, platform engineering, and modernization consulting backed by deep Kubernetes and AWS expertise.">
+  <title>Lancement | Platform Engineering for Teams That Ship</title>
+  <meta name="description" content="Lancement helps engineering teams build infrastructure that empowers rather than slows down. Over a decade of platform engineering at scale.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,63 +28,122 @@
         </svg>
         <span class="logo-text">Lancement</span>
       </a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <a href="#contact" class="nav-cta">Let&rsquo;s talk</a>
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- Opening Statement -->
   <section class="hero" id="hero">
-    <div class="container hero-content">
-      <h1>Lancement</h1>
-      <p class="tagline">Cloud infrastructure &amp; platform engineering for teams that ship.</p>
-    </div>
-    <div class="scroll-indicator" aria-hidden="true">
-      <span></span>
+    <div class="container">
+      <h1 class="fade-in">Infrastructure should empower your team, not slow them down.</h1>
+      <p class="hero-sub fade-in">Great platforms don&rsquo;t just run workloads&mdash;they give teams the confidence to ship. The technology matters, but the people it serves matter more.</p>
     </div>
   </section>
 
   <!-- About -->
   <section class="about" id="about">
-    <div class="container fade-in">
-      <h2>More than a decade of engineering at scale.</h2>
-      <p>Lancement brings more than a decade of deep Kubernetes and AWS experience to every engagement. We&rsquo;ve delivered infrastructure and platform solutions for organizations like T-Mobile, Starbucks, GameStop, Warby Parker, and Fred Hutch Cancer Center&mdash;designing systems that are secure, observable, and built to last.</p>
+    <div class="container">
+      <div class="about-intro fade-in">
+        <img src="images/profile.webp" alt="Joachim Hill-Grannec" class="about-photo" width="280" height="280">
+        <div>
+          <h2>More than a decade of engineering at scale.</h2>
+          <p>I started Lancement because I kept seeing the same thing: talented engineering teams held back by infrastructure that wasn&rsquo;t built for them. Teams that should have been shipping features were instead fighting deploys, debugging pipelines, and working around platforms that hadn&rsquo;t kept pace.</p>
+        </div>
+      </div>
+      <p class="fade-in">Over the past decade, I&rsquo;ve had the opportunity to change that&mdash;designing and building infrastructure for organizations like T-Mobile, Starbucks, GameStop, Warby Parker, and the U.S. Department of Defense. Every engagement is different, but the goal is always the same: systems that are secure, observable, and built to get out of your team&rsquo;s way. From commercial retail to defense and government, I&rsquo;ve learned that security and speed aren&rsquo;t opposites&mdash;done right, they reinforce each other.</p>
+      <p class="fade-in">The most rewarding part of this work isn&rsquo;t the architecture diagrams or the Terraform modules. It&rsquo;s watching a team go from dreading deploys to shipping with confidence.</p>
     </div>
   </section>
+
+  <!-- Principles -->
+  <section class="principles" id="principles">
+    <div class="container">
+      <h2 class="fade-in">How I work</h2>
+      <ol class="principles-list">
+        <li class="fade-in">
+          <span class="principle-number">1</span>
+          <div>
+            <strong>Teams over tools.</strong>
+            <p>The best infrastructure is the kind your team actually understands and can operate. Technology choices follow from people, not the other way around.</p>
+          </div>
+        </li>
+        <li class="fade-in">
+          <span class="principle-number">2</span>
+          <div>
+            <strong>Keep it simple.</strong>
+            <p>If a shell script works, don&rsquo;t build a microservice. Complexity is a liability. Every layer you add is a layer someone has to debug at 2 a.m.</p>
+          </div>
+        </li>
+        <li class="fade-in">
+          <span class="principle-number">3</span>
+          <div>
+            <strong>Automate security.</strong>
+            <p>Scan everything. Sign images. Bake hardening into the build. Security that depends on humans remembering to do something is security that will fail.</p>
+          </div>
+        </li>
+        <li class="fade-in">
+          <span class="principle-number">4</span>
+          <div>
+            <strong>Cattle, not pets.</strong>
+            <p>Ephemeral by default. If it breaks, redeploy from code. Infrastructure that can&rsquo;t be rebuilt from scratch isn&rsquo;t infrastructure&mdash;it&rsquo;s a liability.</p>
+          </div>
+        </li>
+        <li class="fade-in">
+          <span class="principle-number">5</span>
+          <div>
+            <strong>Ship, then iterate.</strong>
+            <p>Done is better than perfect. Get something working, get it in front of people, and improve it based on what you learn.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Photo break -->
+  <div class="photo-break fade-in">
+    <img src="images/portfolio-2.webp" alt="Surfers watching the waves in Central America" loading="lazy">
+  </div>
 
   <!-- Services -->
   <section class="services" id="services">
     <div class="container">
-      <h2 class="fade-in">What we do</h2>
-      <div class="services-grid">
-        <div class="service-card fade-in">
-          <h3>DevOps &amp; Infrastructure</h3>
-          <p>Production-grade cloud infrastructure on AWS and GCP. We build with Terraform, automate with CI/CD, and run workloads on Kubernetes&mdash;from initial architecture through ongoing operations.</p>
+      <h2 class="fade-in">What changes when we work together.</h2>
+      <div class="outcomes">
+        <div class="outcome fade-in">
+          <h3>Your team ships faster.</h3>
+          <p>CI/CD pipelines that actually work. Kubernetes clusters that don&rsquo;t need babysitting. Terraform that your whole team can reason about. Infrastructure on AWS and GCP that scales with you, not against you.</p>
         </div>
-        <div class="service-card fade-in">
-          <h3>Technology Modernization</h3>
-          <p>Legacy system modernization, monolith-to-microservices migrations, and event-driven architectures with Kafka. We help teams move off aging platforms without disrupting what&rsquo;s already working.</p>
+        <div class="outcome fade-in">
+          <h3>Your legacy systems stop holding you back.</h3>
+          <p>Monolith-to-microservices migrations that don&rsquo;t break everything. Event-driven architectures with Kafka. Modernization that meets your team where they are, not where a vendor wishes they were.</p>
         </div>
-        <div class="service-card fade-in">
-          <h3>Platform Engineering</h3>
-          <p>Internal developer platforms, golden paths, and self-service tooling. We reduce cognitive load so your engineers spend time shipping features, not fighting infrastructure.</p>
+        <div class="outcome fade-in">
+          <h3>Your platform becomes self-service.</h3>
+          <p>Internal developer platforms with golden paths. Self-service tooling that reduces cognitive load. Your engineers spend time shipping features, not filing infrastructure tickets.</p>
+        </div>
+        <div class="outcome fade-in">
+          <h3>You move fast in regulated environments.</h3>
+          <p>Compliance frameworks, STIGs, and security controls don&rsquo;t have to mean slow. Automated hardening, image signing, and continuous ATO pipelines let your team ship with confidence&mdash;even when the stakes are highest.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact / Footer -->
+  <!-- Photo break -->
+  <div class="photo-break fade-in">
+    <img src="images/portfolio-3.webp" alt="Waves breaking on the coast" loading="lazy">
+  </div>
+
+  <!-- Contact -->
   <footer class="site-footer" id="contact">
-    <div class="container footer-content fade-in">
-      <h2>Let&rsquo;s work together.</h2>
-      <p class="contact-email"><a href="mailto:workwithus@lancement.com">workwithus@lancement.com</a></p>
-      <p class="contact-location">New York, NY</p>
+    <div class="container footer-content">
+      <h2 class="fade-in">Let&rsquo;s work together.</h2>
+      <p class="contact-intro fade-in">If your team is outgrowing its infrastructure, I&rsquo;d like to hear about it.</p>
+      <div class="contact-links fade-in">
+        <p class="contact-email"><a href="mailto:workwithus@lancement.com">workwithus@lancement.com</a></p>
+        <p class="contact-calendar"><a href="https://cal.com/josmo/15min" target="_blank" rel="noopener">Book a 15-minute call</a></p>
+      </div>
+      <p class="contact-location fade-in">New York, NY</p>
       <p class="copyright">&copy; 2026 Lancement. All rights reserved.</p>
     </div>
   </footer>

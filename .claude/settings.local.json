@@ -1,7 +1,23 @@
 {
   "permissions": {
     "allow": [
-      "Bash(wc:*)"
+      "Bash(wc:*)",
+      "WebSearch",
+      "WebFetch(domain:37signals.com)",
+      "WebFetch(domain:thoughtbot.com)",
+      "WebFetch(domain:www.ideo.com)",
+      "WebFetch(domain:www.liatrio.com)",
+      "WebFetch(domain:basecamp.com)",
+      "WebFetch(domain:linear.app)",
+      "WebFetch(domain:notion.so)",
+      "WebFetch(domain:www.notion.com)",
+      "WebFetch(domain:martinfowler.com)",
+      "WebFetch(domain:www.hexdevs.com)",
+      "WebFetch(domain:leebriggs.co.uk)",
+      "WebFetch(domain:dxw.com)",
+      "Bash(open:*)",
+      "WebFetch(domain:grannec.com)",
+      "Bash(curl:*)"
     ]
   }
 }
