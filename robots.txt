@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /.git/
+Disallow: /.claude/
+Disallow: /.github/
+
+Sitemap: https://lancement.com/sitemap.xml
