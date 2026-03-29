@@ -25,4 +25,39 @@
       el.classList.add('visible');
     });
   }
+
+  // Theme toggle: system → light → dark → system
+  var toggle = document.querySelector('.theme-toggle');
+  var darkMQ = window.matchMedia('(prefers-color-scheme: dark)');
+
+  // Follow system preference changes in real-time when in system mode
+  darkMQ.addEventListener('change', function () {
+    var saved = localStorage.getItem('theme');
+    if (!saved || saved === 'system') {
+      document.documentElement.removeAttribute('data-theme');
+    }
+  });
+
+  if (toggle) {
+    toggle.addEventListener('click', function () {
+      var current = localStorage.getItem('theme') || 'system';
+      var next;
+
+      if (current === 'system') {
+        next = 'light';
+      } else if (current === 'light') {
+        next = 'dark';
+      } else {
+        next = 'system';
+      }
+
+      if (next === 'system') {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.removeItem('theme');
+      } else {
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+      }
+    });
+  }
 })();
